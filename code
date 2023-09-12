@@ -1,0 +1,27 @@
+Module Module1
+
+    Sub Main()
+        Dim marks(10) As Integer
+
+        Dim i As Integer
+        Console.Write("Enter the marks of student " & vbCrLf)
+
+        For i = 1 To marks.Length - 1
+            marks(i) = Console.ReadLine()
+        Next i
+       
+        'sort the array
+        Array.Sort(marks)
+        Console.WriteLine("Sorted Array: ")
+
+        For i = 1 To marks.Length - 1
+            Console.WriteLine("{0}", marks(i))
+        Next i
+        Console.ReadLine()
+
+
+
+      
+    End Sub
+
+End Module
